@@ -43,7 +43,6 @@ function App() {
 
     const [winningSquares, setWinningSquares] = useState([]);
 
-    // console.log(squares);
     const [handleClick, checkWinner, evaluate, restartGame] = (
         BoardFunctions(
             xTurn,
