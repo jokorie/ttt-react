@@ -1,5 +1,9 @@
 .App {
+
   text-align: center;
+  background-color: rgb(70, 70, 70);
+
+
 }
 
 .App-logo {
@@ -35,4 +39,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Take full height of the viewport */
+}
+
+/* Add this CSS to your stylesheet (e.g., App.css) */
+
+.myButton {
+  background-color: #0078d7; /* VSCode blue */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Bigger size: vertical and horizontal padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Slightly rounded corners */
+  font-size: 16px; /* Larger font size */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.myButton:hover {
+  background-color: #005ba1; /* Slightly darker blue on hover */
 }

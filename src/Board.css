@@ -1,0 +1,36 @@
+.board {
+    margin: 20px auto;
+    display: grid;
+    /* grid-template: repeat(3, 1fr); */
+    gap: 10px;
+    
+}
+.square {
+    width: 100px;
+    height: 100px;
+    background: lightgray;
+    border: 1px solid darkgray;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.square:active, .square:focus {
+    border: 2px solid grey; /* Visible border, same width */
+}
+
+.square:hover {
+    background-color: grey; /* or any other color you'd like on hover */
+    /* you can add other styles you want to change on hover */
+}
+
+.board-row {
+    display: flex;
+    gap: 0px; /* Adjust the gap size as needed */
+}
+
+.highlight {
+    background-color: #0078d7; /* Blue background for the winning squares */
+    /* Additional styling for the highlight effect, such as a glow */
+    box-shadow: 0 0 10px #0078d7; /* Optional: blue glow */
+}
